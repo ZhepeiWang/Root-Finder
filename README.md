@@ -1,5 +1,5 @@
 # Root-Finder
-This is an univariate polynomial solver, which finds all REAL roots or just all real roots in a given interval.
+This is an univariate polynomial solver, which finds all REAL roots of any given polynomial.
 
 # Feature
 
