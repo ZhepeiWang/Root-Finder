@@ -48,6 +48,11 @@ Outputs:
 
     std::set<double> which stores all searched real roots.
 
+Example:
+    
+    Eigen::VectorXd coeffs(6);
+    coeffs << 1.0, -2.0, 3.0, -4.0, 5.0, -6.0;
+    std::set<double> allRoots = RootFinder::solvePolyInterval(coeffs, -100, 100);
 
 # Compile
 
