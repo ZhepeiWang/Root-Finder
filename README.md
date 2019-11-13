@@ -4,7 +4,7 @@ This is an univariate polynomial solver, which finds all REAL roots or just all 
 # Feature
 
 1. As for low order polynomials (linear, quadratic, cubic and quartic polynomials), the solver use closed form solution.
-In this case, the solver only takes about 0.4E-6 sec.
+In this case, the solver only takes about 4.0E-7 sec.
 2. As for high order polynomials (order >= 5), the solver implements 2 different methods to find all roots. The recommended 
 one, names Real Roots Isolation Method, is based on Sturm's Theorem as well as other geometric property of polynomials. 
 The other one is based on Companion Matrix Method. The example is the comparision between these two methods.
