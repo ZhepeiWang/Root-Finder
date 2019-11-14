@@ -10,7 +10,7 @@ one, named Real Roots Isolation Method, is based on Sturm's Theorem as well as o
 The other one is based on Companion Matrix Method. The example is the comparision between these two methods.
 
 3. The Real Roots Isolation Methods uses Cauchy’s bound as well as Kojima’s bound to bracket all roots. Normally, the latter is tighter 
-than the former for about 10^12 magnitude if all roots randomly lie in (-100, 100). Technically, Fujiwara’s bound is always better than Kojima's bound, while Kojima's bound 
+than the former for about 10^12 magnitude if all roots randomly lie in (0, 100). Technically, Fujiwara’s bound is always better than Kojima's bound, while Kojima's bound 
 is more numerically friendly and tight enough.
 
 4. The Real Roots Isolation Methods uses Sturm's theorem to determine the number of roots inside any given interval.
