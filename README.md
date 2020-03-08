@@ -11,7 +11,7 @@ premise of __instruction set independence__.
 2. The interface only contains two functions. One is for __roots finding__ while the other one is for __roots counting__.
 
 3. As for low order polynomials (linear, quadratic, cubic, and quartic polynomials), the solver calculates their closed-form solutions. 
-In this case, the solver only takes about 0.4 @mu s.
+In this case, the solver only takes about 0.4 microsecond.
 
 4. As for high order polynomials (order >= 5), the solver implements 2 different methods to find all roots. The recommended 
 one, named __Real Roots Isolation Method__. The other one is based on [__Companion Matrix Method__](https://en.wikipedia.org/wiki/Companion_matrix). 
@@ -37,7 +37,7 @@ roots finding. Moreover, RPOLY is designed to find all roots of a polynomial whi
 Therefore, when roots in an interval are required, our method performs far better.
 
 9. The library is also capable of efficiently counting the number of roots inside an interval, of which RPOLY is incapable. For 8-order 
-polynomials, our roots counter only takes about $0.2\mu s$ under Intel i7-8700 CPU and $0.8\mu s$ under Intel i5-5200U CPU. The time 
+polynomials, our roots counter only takes about 0.2 microsecond under Intel i7-8700 CPU and 0.8 microsecond under Intel i5-5200U CPU. The time 
 consumption for high order polynomial is extremely low as for those low order polynomials which have closed-form solutions.
 
 10. Furthur instruction set independent optimization can be done to get better performance.
