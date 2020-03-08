@@ -108,7 +108,7 @@ Example:
 
 # Note
 
-0. The "RPOLY" algorithm benchmarked comes a modified version by [Helen Oleynikova](https://github.com/helenol), 
+0. The "RPOLY" algorithm benchmarked comes from a modified version by [Helen Oleynikova](https://github.com/helenol), 
 which originates in http://www.netlib.org/toms/.
 
 1. This lib is employed in a trajectory optimization/motion planning project of [ZJU-FAST-Lab](https://github.com/ZJU-FAST-Lab). 
