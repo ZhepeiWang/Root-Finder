@@ -14,7 +14,7 @@ premise of __instruction set independence__.
 In this case, the solver only takes about 0.4 microsecond.
 
 4. As for high order polynomials (order >= 5), the solver implements 2 different methods to find all roots. The recommended 
-one, named __Real Roots Isolation Method__. The other one is based on [__Companion Matrix Method__](https://en.wikipedia.org/wiki/Companion_matrix). 
+one is __Real Roots Isolation Method__. The other one is based on [__Companion Matrix Method__](https://en.wikipedia.org/wiki/Companion_matrix). 
 
 5. The __Real Roots Isolation Method__ uses [geometrical properties](https://en.wikipedia.org/wiki/Geometrical_properties_of_polynomial_roots) 
 of polynomial roots to tighten a given interval. Both Cauchy’s bound as well as Kojima’s bound are adopted. Normally, the latter 
