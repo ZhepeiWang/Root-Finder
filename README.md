@@ -6,9 +6,9 @@ __Root-Finder__ is a header-only univariate polynomial solver, which finds/count
 0. The solver is a __C++11__ [__header-only__](https://en.wikipedia.org/wiki/Header-only) library, which is highly optimized on the 
 premise of __instruction set independence__.
 
-1. It only contains one header file __"root_finder.hpp"__.
+1. It only contains one header file "__root_finder.hpp__".
 
-2. The interface of this library only contains two functions. One is for __roots finding__ while the other one is for __roots counting__.
+2. The interface only contains two functions. One is for __roots finding__ while the other one is for __roots counting__.
 
 3. As for low order polynomials (linear, quadratic, cubic and quartic polynomials), the solver calculates their closed-form solutions. 
 In this case, the solver only takes about 0.4E-6 sec.
@@ -16,7 +16,7 @@ In this case, the solver only takes about 0.4E-6 sec.
 4. As for high order polynomials (order >= 5), the solver implements 2 different methods to find all roots. The recommended 
 one, named __Real Roots Isolation Method__. The other one is based on [__Companion Matrix Method__](https://en.wikipedia.org/wiki/Companion_matrix). 
 
-5. The __Real Roots Isolation Method__ uses [__geometrical properties__](https://en.wikipedia.org/wiki/Geometrical_properties_of_polynomial_roots) 
+5. The __Real Roots Isolation Method__ uses [geometrical properties](https://en.wikipedia.org/wiki/Geometrical_properties_of_polynomial_roots) 
 of polynomial roots to tighten a given inteval. Both Cauchy’s bound as well as Kojima’s bound are adopted. Normally, the latter 
 can be tighter than the former for several magnitude in most cases. Technically, [Fujiwara’s bound is always better than 
 Kojima's bound](https://doi.org/10.1016/j.cam.2003.10.019), while Kojima's bound is more numerically friendly and is tight enough.
