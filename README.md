@@ -7,27 +7,27 @@ __Root-Finder__ is a header-only univariate polynomial solver, which finds/count
 
 1. Only one header file "root_finder.hpp".
 
-2. The interface of this lib only contains two functions. One is for _roots finding_. The other is for _roots counting_.
+2. The interface of this lib only contains two functions. One is for __roots finding__. The other is for __roots counting__.
 
 3. As for low order polynomials (linear, quadratic, cubic and quartic polynomials), the solver use closed form solution.
 In this case, the solver only takes about 0.4E-6 sec.
 
 4. As for high order polynomials (order >= 5), the solver implements 2 different methods to find all roots. The recommended 
-one, named _Real Roots Isolation Method_. The other one is based on _Companion Matrix Method_. The example is the comparision 
+one, named __Real Roots Isolation Method__. The other one is based on __Companion Matrix Method__. The example is the comparision 
 between these two methods.
 
-5. The _Real Roots Isolation Method_ uses Cauchy’s bound as well as Kojima’s bound to bracket all roots. Normally, the latter 
+5. The __Real Roots Isolation Method__ uses Cauchy’s bound as well as Kojima’s bound to bracket all roots. Normally, the latter 
 can be tighter than the former for several magnitude in most cases. Technically, Fujiwara’s bound is always better than 
 Kojima's bound, while Kojima's bound is more numerically friendly and is tight enough.
 
-6. In _Real Roots Isolation Method_, Sturm theory is employed to bracket each single root. Then _TOMS748_ is employed to shrink 
-the interval efficiently
+6. In __Real Roots Isolation Method__, Sturm theory is employed to bracket each single root. Then __TOMS748__ is employed to shrink 
+the interval efficiently.
 
-7. The _Real Roots Isolation Method_ is much faster and much more stable than the _Companion Matrix Method_. However, due to 
+7. The __Real Roots Isolation Method__ is much faster and much more stable than the __Companion Matrix Method__. However, due to 
 truncation error of float point number, the former is recommended for at most 32-order polynomials, while the latter is only 
 recommended for at-most 20-order polynomials.
 
-8. We provide benchmark example between our _Real Roots Isolation Method_ and _TOMS493: Jenkins–Traub Algorithm_ on two different 
+8. We provide benchmark example between our __Real Roots Isolation Method__ and __TOMS493: Jenkins–Traub Algorithm__ on two different 
 platforms. The latter one is commonly known as the "RPOLY" algorithm. For 8-order polynomials, our method is about 27% faster than 
 "RPOLY" under Intel i5-5200U CPU, while 13% slower under Intel i7-8700 CPU. In general, out lib has comparably low time comsumption 
 as the widely employed "RPOLY" algorithm, in terms of real roots finding. 
@@ -42,7 +42,7 @@ consumption for high order polynomial is extremely low as for those low order po
 
 Only two functions below is needed.
 
-_Roots Finding Function_:
+__Roots Finding Function__:
 
     std::set<double> RootFinder::solvePolynomial(const Eigen::VectorXd &coeffs, double lbound, double ubound, double tol, bool isolation = true)
 
@@ -71,7 +71,7 @@ Example:
     coeffs << 1.0, -2.0, 3.0, -4.0, 5.0, -6.0;
     std::set<double> allRoots = RootFinder::solvePolynomial(coeffs, -100.0, 100.0);
 
-_Roots Counting Function_:
+__Roots Counting Function__:
 
     int RootFinder::countRoots(const Eigen::VectorXd &coeffs, double lbound, double ubound)
 
