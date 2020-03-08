@@ -11,7 +11,7 @@ premise of __instruction set independence__.
 2. The interface only contains two functions. One is for __roots finding__ while the other one is for __roots counting__.
 
 3. As for low order polynomials (linear, quadratic, cubic, and quartic polynomials), the solver calculates their closed-form solutions. 
-In this case, the solver only takes about $0.4\mu s$.
+In this case, the solver only takes about 0.4 @mu s.
 
 4. As for high order polynomials (order >= 5), the solver implements 2 different methods to find all roots. The recommended 
 one, named __Real Roots Isolation Method__. The other one is based on [__Companion Matrix Method__](https://en.wikipedia.org/wiki/Companion_matrix). 
