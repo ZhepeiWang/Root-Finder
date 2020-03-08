@@ -1,5 +1,5 @@
 # Root-Finder
-_Root-Finder_ is a header-only univariate polynomial solver, which finds/counts all REAL roots of any polynomial inside a given interval.
+__Root-Finder__ is a header-only univariate polynomial solver, which finds/counts all REAL roots of any polynomial inside a given interval.
 
 # Feature
 
