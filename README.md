@@ -28,8 +28,8 @@ single root. Then [__TOMS748__](https://doi.org/10.1145/210089.210111) is employ
 truncation error of float point number, the former is recommended for at most 32-order polynomials, while the latter is only 
 recommended for at most 20-order polynomials.
 
-8. We provide benchmark example between our __Real Roots Isolation Method__ and [__TOMS493: Jenkins–Traub Algorithm__]
-(https://en.wikipedia.org/wiki/Jenkins%E2%80%93Traub_algorithm) on two different platforms. The latter one is commonly 
+8. We provide benchmark example between our __Real Roots Isolation Method__ and 
+[__TOMS493: Jenkins–Traub Algorithm__](https://en.wikipedia.org/wiki/Jenkins%E2%80%93Traub_algorithm) on two different platforms. The latter one is commonly 
 known as the "RPOLY" algorithm. In the benchmark, all roots of a polynomial are required. For 8-order polynomials, 
 our method is about 27% faster than "RPOLY" under Intel i5-5200U CPU, while 13% slower under Intel i7-8700 CPU. 
 In general, out lib has comparably low time comsumption as the widely employed RPOLY algorithm, in terms of all real 
