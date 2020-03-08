@@ -6,7 +6,7 @@ __Root-Finder__ is a header-only univariate polynomial solver, which finds/count
 0. The solver is a __C++11__ [__header-only__](https://en.wikipedia.org/wiki/Header-only) library, which is highly optimized on the 
 premise of __instruction set independence__.
 
-1. It only contains one header file "__root_finder.hpp__".
+1. It only contains one header file "[__root_finder.hpp__](https://github.com/ZhepeiWang/Root-Finder/tree/master/root_finder/include/root_finder)".
 
 2. The interface only contains two functions. One is for __roots finding__ while the other one is for __roots counting__.
 
@@ -32,7 +32,7 @@ recommended for at most 20-order polynomials.
 [__TOMS493: Jenkins–Traub Algorithm__](https://en.wikipedia.org/wiki/Jenkins%E2%80%93Traub_algorithm) on two different platforms. The latter one is commonly 
 known as the "RPOLY" algorithm. In the benchmark, all roots of a polynomial are required. For 8-order polynomials, 
 our method is about 27% faster than "RPOLY" under Intel i5-5200U CPU, while 13% slower under Intel i7-8700 CPU. 
-In general, out lib has comparably low time comsumption as the widely employed RPOLY algorithm, in terms of all real 
+In general, out library has comparably low time comsumption as the widely employed RPOLY algorithm, in terms of all real 
 roots finding. Moreover, RPOLY is designed to find all roots of a polynomial while ours can handle any given interval. 
 Therefore, when roots in an interval are required, our method performs far better.
 
