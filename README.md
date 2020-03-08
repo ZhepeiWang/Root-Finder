@@ -17,7 +17,7 @@ In this case, the solver only takes about 0.4E-6 sec.
 one, named __Real Roots Isolation Method__. The other one is based on [__Companion Matrix Method__](https://en.wikipedia.org/wiki/Companion_matrix). 
 
 5. The __Real Roots Isolation Method__ uses [geometrical properties](https://en.wikipedia.org/wiki/Geometrical_properties_of_polynomial_roots) 
-of polynomial roots to tighten a given inteval. Both Cauchy’s bound as well as Kojima’s bound are adopted. Normally, the latter 
+of polynomial roots to tighten a given interval. Both Cauchy’s bound as well as Kojima’s bound are adopted. Normally, the latter 
 can be tighter than the former for several magnitude in most cases. Technically, [Fujiwara’s bound is always better than 
 Kojima's bound](https://doi.org/10.1016/j.cam.2003.10.019), while Kojima's bound is more numerically friendly and is tight enough.
 
