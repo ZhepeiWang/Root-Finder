@@ -57,7 +57,7 @@ Inputs:
         coeffs=[a(n), a(n-1), ..., a(1), a(0)].
 
     lbound and ubound:
-        Open interval (lbound, ubound). If lbound = -INFINITY and ubound = INFINITY, then all real roots can be found by the solver.
+        Open interval (lbound, ubound). If lbound = -INFINITY and ubound = INFINITY, then all real roots can be found by the solver. Note that polynomial cannot be zero at these two boundaries.
     
     tol:
         tolerance for precision, only works when order is higher than 4.
@@ -86,7 +86,7 @@ Inputs:
         coeffs=[a(n), a(n-1), ..., a(1), a(0)].
 
     lbound and ubound:
-        Open interval (lbound, ubound). Note that polynomial cannot be zeros at these two boundaries.
+        Open interval (lbound, ubound). Note that polynomial cannot be zero at these two boundaries.
 
 Outputs:
 
