@@ -879,7 +879,7 @@ inline std::set<double> solvePolynomial(const Eigen::VectorXd &coeffs, double lb
 
     for (auto it = rts.begin(); it != rts.end();)
     {
-        if (*it >= lbound && *it <= ubound)
+        if (*it > lbound && *it < ubound)
         {
             it++;
         }
