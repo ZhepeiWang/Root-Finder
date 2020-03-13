@@ -858,18 +858,6 @@ inline std::set<double> solvePolynomial(const Eigen::VectorXd &coeffs, double lb
         if (nonzeros <= 5)
         {
             rts = RootFinderPriv::solveQuart(ncoeffs(0), ncoeffs(1), ncoeffs(2), ncoeffs(3), ncoeffs(4));
-
-            for (auto it = rts.begin(); it != rts.end();)
-            {
-                if (*it >= lbound && *it <= ubound)
-                {
-                    it++;
-                }
-                else
-                {
-                    it = rts.erase(it);
-                }
-            }
         }
         else
         {
@@ -888,7 +876,19 @@ inline std::set<double> solvePolynomial(const Eigen::VectorXd &coeffs, double lb
             rts.insert(0.0);
         }
     }
-
+    
+    for (auto it = rts.begin(); it != rts.end();)
+    {
+        if (*it >= lbound && *it <= ubound)
+        {
+            it++;
+        }
+        else
+        {
+            it = rts.erase(it);
+        }
+    }
+    
     return rts;
 }
 
