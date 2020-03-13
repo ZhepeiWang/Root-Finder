@@ -1,4 +1,5 @@
 #include <iostream>
+#include <random>
 #include <ctime>
 
 #include "root_finder/root_finder.hpp"
