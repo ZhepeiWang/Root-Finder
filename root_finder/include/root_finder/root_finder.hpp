@@ -1,5 +1,5 @@
-#ifndef ROOTFINDER_HPP
-#define ROOTFINDER_HPP
+#ifndef ROOT_FINDER_HPP
+#define ROOT_FINDER_HPP
 
 #define _USE_MATH_DEFINES
 #include <cmath>
