@@ -44,7 +44,7 @@ consumption for high order polynomial is extremely low as for those low order po
 
 # Interface
 
-Only two functions below is needed.
+Only two functions below are needed.
 
 __Roots Finding Function__:
 
