@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <random>
 #include <ctime>
 
@@ -14,7 +15,7 @@ std::uniform_real_distribution<double> uniformReal(0.0, 1.0);
 
 void testRootFinder(int order)
 {
-    int numRounds = 30000;
+    int numRounds = 300000;
     double tol = 1e-8;
     int dispPrecision = 12;
 
