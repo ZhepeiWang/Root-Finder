@@ -95,7 +95,7 @@ Example:
 
 # Compile
 
-    sudo apt install libeigen3-dev libboost-dev
+    sudo apt install libeigen3-dev
     mkdir build
     cd build
     cmake ..
