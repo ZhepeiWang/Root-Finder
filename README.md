@@ -103,5 +103,5 @@ Example:
 
 # Note
 
-The "RPOLY" algorithm benchmarked comes from a modified version by [Helen Oleynikova](https://github.com/helenol), 
+The "RPOLY" algorithm which we benchmarks againt comes from a modified version by [Helen Oleynikova](https://github.com/helenol), 
 which originates in http://www.netlib.org/toms/.
