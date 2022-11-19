@@ -437,7 +437,7 @@ inline double numSignVar(double x, double **sturmSeqs, int *szSeq, int len)
     }
 
     return signVar;
-};
+}
 
 inline void polyDeri(double *coeffs, double *dcoeffs, int len)
 // Calculate the derivative poly coefficients of a given poly
@@ -665,7 +665,7 @@ inline void recurIsolate(double l, double r, double fl, double fr, int lnv, int 
         rts.insert(m);
         return;
     }
-};
+}
 
 inline std::set<double> isolateRealRoots(const Eigen::VectorXd &coeffs, double lbound, double ubound, double tol)
 // Calculate roots of coeffs(x) inside (lbound, rbound) leveraging Sturm theory
